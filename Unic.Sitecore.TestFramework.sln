@@ -5,6 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unic.Sitecore.TestFramework
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unic.Sitecore.TestFramework.NUnit", "Unic.Sitecore.TestFramework.NUnit\Unic.Sitecore.TestFramework.NUnit.csproj", "{245E5659-286B-400B-BE76-BD6C30C9D5D7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{DBA6BE61-BEB3-4ADB-B554-3167FA87672C}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Install.ps1 = Build\Install.ps1
+		Build\TestFramework.targets = Build\TestFramework.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
