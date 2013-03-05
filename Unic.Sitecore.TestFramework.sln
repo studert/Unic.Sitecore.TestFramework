@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unic.Sitecore.TestFramework
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unic.Sitecore.TestFramework.NUnit", "Unic.Sitecore.TestFramework.NUnit\Unic.Sitecore.TestFramework.NUnit.csproj", "{245E5659-286B-400B-BE76-BD6C30C9D5D7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{DBA6BE61-BEB3-4ADB-B554-3167FA87672C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{DBA6BE61-BEB3-4ADB-B554-3167FA87672C}"
 	ProjectSection(SolutionItems) = preProject
 		Build\Install.ps1 = Build\Install.ps1
 		Build\MSBuild.psm1 = Build\MSBuild.psm1
@@ -19,6 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DA6769
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notices", "notices", "{5FF9C3D9-0ACE-4655-95CC-31CB86F2C1DC}"
+	ProjectSection(SolutionItems) = preProject
+		README.markdown = README.markdown
 	EndProjectSection
 EndProject
 Global
