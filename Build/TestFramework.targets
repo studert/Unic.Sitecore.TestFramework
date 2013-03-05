@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <SitecorePath>D:\path\to\sitecore</SitecorePath>
+        <RunConfigurationCopy Condition="'$(RunConfigurationCopy)'==''">true</RunConfigurationCopy>
+    
+        <BuildDependsOn Condition="$(RunConfigurationCopy) == 'true'">
+            $(BuildDependsOn);
+            ConfigurationCopy;
+        </BuildDependsOn>
+    </PropertyGroup>
+
+    <Target Name="ConfigurationCopy">
+        <Copy SourceFiles="$(SitecorePath)\Web.config" DestinationFiles="$(OutputPath)\$(AssemblyName).dll.config" />
+        <CreateItem Include="$(SitecorePath)\App_Config\**\*.*">
+            <Output ItemName="configFiles" TaskParameter="Include" />
+        </CreateItem>
+        <Copy SourceFiles="@(configFiles)" DestinationFolder="$(OutputPath)\App_Config\%(RecursiveDir)" />
+        <Copy SourceFiles="@(configFiles)" DestinationFolder="$(MSBuildProjectDirectory)\App_Config\%(RecursiveDir)" />
+        <CreateItem Include="$(SitecorePath)\bin\*.dll">
+            <Output ItemName="binaryFiles" TaskParameter="Include" />
+        </CreateItem>
+        <Copy SourceFiles="@(binaryFiles)" DestinationFolder="$(OutputPath)" />
+    </Target>
+</Project>

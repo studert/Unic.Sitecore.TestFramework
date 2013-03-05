@@ -5,10 +5,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unic.Sitecore.TestFramework
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unic.Sitecore.TestFramework.NUnit", "Unic.Sitecore.TestFramework.NUnit\Unic.Sitecore.TestFramework.NUnit.csproj", "{245E5659-286B-400B-BE76-BD6C30C9D5D7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{DBA6BE61-BEB3-4ADB-B554-3167FA87672C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{DBA6BE61-BEB3-4ADB-B554-3167FA87672C}"
 	ProjectSection(SolutionItems) = preProject
 		Build\Install.ps1 = Build\Install.ps1
+		Build\MSBuild.psm1 = Build\MSBuild.psm1
+		Build\readme.txt = Build\readme.txt
+		Build\TestFramework.nuspec = Build\TestFramework.nuspec
 		Build\TestFramework.targets = Build\TestFramework.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DA6769F7-B09A-42F5-8BB9-CB48ABB6F393}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global

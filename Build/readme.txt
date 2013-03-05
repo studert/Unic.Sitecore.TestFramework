@@ -1,0 +1,1 @@
+To enable the Test Framework set the <SitecorePath> property in the TestFramework.targets file to point to your Sitecore application.

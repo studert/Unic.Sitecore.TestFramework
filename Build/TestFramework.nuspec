@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Unic.Sitecore.TestFramework</id>
+    <version>1.0.0</version>
+    <title>Unic Sitecore Test Framework</title>
+    <authors>Tobias Studer</authors>
+    <iconurl>http://www.unic.com/img/unic-logo.jpg</iconurl>
+    <projecturl>http://sitecore.unic.com/</projecturl>
+    <tags>unic sitecore test</tags>
+    <copyright>Unic AG</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The targets to copy the Sitecore configuration to the test project after build.</description>
+  </metadata>
+  <files>
+    <file src="*.targets" target="targets" />
+    <file src="Install.ps1" target="tools" />
+    <file src="MSBuild.psm1" target="tools" />
+  </files>
+</package>
